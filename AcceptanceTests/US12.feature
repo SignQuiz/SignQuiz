@@ -20,7 +20,7 @@ Feature: Crear ruta de aprendizaje
     Cuando no observa la opción de crear ruta de aprendizaje
     Entonces se da cuenta que inicio en una cuenta aprendiz y no en una cuenta especialista
 
-    Examples: Crear ruta de aprendizaje 
+    Examples: No se puede crear ruta de aprendizaje porque inicio con cuenta aprendiz
     |Menu principal|
     |Inicio|"Ruta de aprendizaje"|Material educativo|Estadísticas|Evaluaciones|Configuracion|
     |Ruta de aprendizaje|

@@ -7,7 +7,7 @@ Feature: Acceder al material educativo de lenguaje de señas
     Cuando ingrese a la sección de material de aprendizaje 
     Entonces voy a acceder a ruta de aprendizaje con las lecciones subidas por especialistas
      
-    Examples: Seleccion de opcion para acceder a material educativo
+    Examples: Seleccion de opcion para acceder a material educativo y se selecciona un tema especifico
     |Menu principal|
     |Inicio|Ruta de aprendizaje|"Material educativo"|Estadísticas|Evaluaciones|Configuracion|
     |Material educativo|
@@ -18,7 +18,7 @@ Feature: Acceder al material educativo de lenguaje de señas
     Cuando ingrese a la sección de material de aprendizaje 
     Entonces observo que no hay material disponible
     
-    Examples: Seleccion de opcion para acceder a material educativo
+    Examples: Seleccion de opcion para acceder a material educativo y no hay material educativo disponible
     |Menu principal|
     |Inicio|Ruta de aprendizaje|"Material educativo"|Estadísticas|Evaluaciones|Configuracion|
     |Ruta de aprendizaje|

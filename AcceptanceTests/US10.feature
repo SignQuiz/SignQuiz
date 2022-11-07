@@ -8,7 +8,7 @@ Feature: Visualizar respuestas correctas de las pruebas
     Cuando presione la opción de la pregunta.
     Entonces se mostrará en la pantalla el mensaje que la pregunta es correcta
 
-    Examples: Seleccion de respuesta en una evaluacion 
+    Examples: Seleccion de respuesta correcta en una evaluacion 
     |Evaluacion sobre el Abecedario de señas|
     |Pregunta x : ¿Cual de estas señas representa la vocal a ?|
     |Seleccione su respuesta|
@@ -22,7 +22,7 @@ Feature: Visualizar respuestas correctas de las pruebas
     Cuando presione la opción incorrecta de la pregunta
     Entonces se mostrará en pantalla el mensaje de respuesta incorrecta
     
-    Examples: Seleccion de respuesta en una evaluacion 
+    Examples: Seleccion de respuesta incorrecta en una evaluacion 
     |Evaluacion sobre el Abecedario de señas|
     |Pregunta x : ¿Cual de estas señas representa la vocal a ?|
     |Seleccione su respuesta|

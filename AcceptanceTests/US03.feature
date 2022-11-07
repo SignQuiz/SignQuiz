@@ -36,7 +36,7 @@ Feature: Crear cuenta de tipo especialista
         | “Username” | “Password” | 
         | JuanÑoqui  | JuanÑoqui123 | 
         | "Ingrese su informacion profesional" |
-        | " Instituto para personas sordomudas         " |
+        | " Instituto para personas sordomudas" |
     Examples:Datos de salida
         |Mensaje de error de registro|
         |"Ingresaste datos erroneos, Intenta de nuevo"|

@@ -8,7 +8,7 @@ Feature: Visualizar ruta de aprendizaje
     Cuando me dirija a la sección de material de aprendizaje
     Entonces se mostrará en pantalla el material educativo distribuido en una ruta de aprendizaje mediante lecciones, listo para seleccionar por cual lección iniciar
     
-    Examples: Seleccion de opcion para acceder a ruta de aprendizaje
+    Examples: Seleccion de opcion para acceder a ruta de aprendizaje y se visualiza una ruta de aprendizaje
     |Menu principal|
     |Inicio|"Ruta de aprendizaje"|Material educativo|Estadísticas|Evaluaciones|Configuracion|
     |Ruta de aprendizaje|
@@ -21,7 +21,7 @@ Feature: Visualizar ruta de aprendizaje
     Cuando ingrese a la sección de ruta de aprendizaje 
     Entonces observo que no hay ruta de aprendizaje disponible
     
-    Examples: Seleccion de opcion para acceder a ruta de aprendizaje
+    Examples: Seleccion de opcion para acceder a ruta de aprendizaje y no se visualiza una ruta de aprendizaje
     |Menu principal|
     |Inicio|"Ruta de aprendizaje"|Material educativo|Estadísticas|Evaluaciones|Configuracion|
     |Ruta de aprendizaje|

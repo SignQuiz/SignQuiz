@@ -8,7 +8,7 @@ Feature: Registrar material de aprendizaje de lenguaje de señas
     Cuando seleccione la opción de cargar video y el video con la lección de aprendizaje 
     Entonces se subirá el material de aprendizaje
 
-    Examples: Subir archivo de video 
+    Examples: Subir archivo de video exitosamente
     |Menu principal|
     |Inicio|Ruta de aprendizaje|"Material educativo"|Estadísticas|Evaluaciones|Configuracion|
     |Material educativo|"Subir Material"|
@@ -26,7 +26,7 @@ Feature: Registrar material de aprendizaje de lenguaje de señas
     Cuando seleccione la opción de cargar video y seleccione erróneamente el video con la lección de aprendizaje 
     Entonces no se subirá el material de aprendizaje.
     
-    Examples: Subir archivo de video
+    Examples: Subir archivo de video erroneamente
     |Menu principal|
     |Inicio|Ruta de aprendizaje|"Material educativo"|Estadísticas|Evaluaciones|Configuracion|
     |Material educativo|"Subir Material"|
