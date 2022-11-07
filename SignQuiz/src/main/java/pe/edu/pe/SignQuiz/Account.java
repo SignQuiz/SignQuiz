@@ -11,4 +11,7 @@ public class Account {
         this.email = email;
         this.password = password;
     }
+
+    public void register(){}
+    public void login(){}
 }

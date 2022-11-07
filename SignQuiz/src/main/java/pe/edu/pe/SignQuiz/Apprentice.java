@@ -9,5 +9,6 @@ public class Apprentice extends Account{
         this.versionPremium = versionPremium;
         this.attempts = attempts;
     }
+    public void accessMenu(){}
 
 }

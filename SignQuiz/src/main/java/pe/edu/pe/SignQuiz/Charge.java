@@ -1,10 +1,10 @@
 package pe.edu.pe.SignQuiz;
 
 public class Charge  extends Credit{
-    SpecialistPerformance specialistPerformance;
-    public Charge( SpecialistPerformance specialistPerformance,String name, String type, String expDate) {
+    SpecialistPerformance performance;
+    public Charge( SpecialistPerformance performance,String name, String type, String expDate) {
         super(name, type, expDate);
-        this.specialistPerformance=specialistPerformance;
+        this.performance =performance;
     }
     public void getAmount(){}
     public void getCommission(Specialist specialist){}
