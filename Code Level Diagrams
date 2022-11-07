@@ -1,0 +1,116 @@
+workspace {
+    model {
+        Aprendiz = person "Aprendiz"
+        Especialista = person "Especialista"
+        
+        SignQuiz = softwareSystem "SignQuiz" "Learn sign language" {
+           
+           mobileApp = container "Mobile Application" {
+            Aprendiz -> this "Acces to User"
+            Especialista -> this "Acces to repairman"
+           }
+
+           MaterialAprendizaje = container "Learning Material" {
+            mobileApp -> this "Aprendiz use "
+            Aprendiz -> this "Study the learning materiall"
+           }
+           CargarMaterialAprendizaje = container "Upload Learning Material" {
+            mobileApp -> this "Especialista Use"
+            Especialista -> this "Upload study material"
+        
+           }
+           Pruebas = container " Tests" {
+            mobileApp -> this "Aprendiz Use"
+            Aprendiz -> this "Show tests to perform"
+           }
+           CargarPruebas = container "Load Tests" {
+            mobileApp -> this "Especialista use"
+            Especialista -> this "Upload the tests for the trainee"
+           }
+           PruebasRealiazada = container "Tests performed" {
+            mobileApp -> this "Especialista Use"
+            Aprendiz -> this "View your tests"
+           }
+           RutaAprendisaje = container "Learning Route" {
+            mobileApp -> this "Aprendiz use to"
+            Aprendiz -> this "Apprentice uses learning path"
+
+           }
+           Monetizacion = container "Monetization" {
+            mobileApp -> this "Especialista use"
+            Especialista -> this "Specialist receives a payment"
+
+           }
+           estadisticas = container "Statistics" {
+            mobileApp -> this "Especialista use"
+            Especialista -> this "Specialist Statesman"
+           }
+
+           Restfull = container "API web"  {
+            mobileApp -> this "Call API"
+            
+          
+            MainFrameBanking = component "Main Frame Banking System Facade" 
+            AcountsSummaryController = component " Account Summary Controller" {
+                mobileApp -> this "Called APIs"
+            }
+            SinginController = component "Sing in Controller" {
+                 mobileApp -> this "Called APIs"
+            }
+            ResetPasswordController = component "Reset Password Controller" {
+                 mobileApp -> this "Called APIs"
+            }
+            SecurityComponent = component "Security Component" 
+            EmailComponent = component "E-mail Component"
+            SinginController -> SecurityComponent " Security Component use Sing in Controller"
+            ResetPasswordController -> SecurityComponent "Security Component use Reset Password Controller"
+            ResetPasswordController -> EmailComponent " E-mail Component use Reset password controller"
+            AcountsSummaryController -> MainFrameBanking "Uses"
+            
+           }
+
+           database = container "Database"  {
+            MaterialAprendizaje -> this "Send database"
+            CargarMaterialAprendizaje -> this "Send database"
+            pruebas -> this "Send database"
+            CargarPruebas -> this "Send Database"
+            PruebasRealiazada -> this "Send database"
+            RutaAprendisaje -> this "Send database"
+            Monetizacion -> this "Send Database"
+            estadisticas -> this "send database"
+            SecurityComponent -> this "Read and Write" 
+           }
+        }
+        EmailSystem = softwareSystem "E-mail Systems" {
+            SignQuiz -> this "Send Emails System"
+            EmailSystem -> Aprendiz "Send menssages"
+            EmailSystem -> Especialista "Send menssages"
+            Restfull -> this "Recive Emails" 
+            EmailComponent -> this "Send E-mails"
+           
+        }
+        FrameBanking = softwareSystem "Main Frame Banking System" {
+            MainFrameBanking -> this "API called"
+
+        }
+    }
+
+    views {
+        systemContext SignQuiz {
+            include *
+            autolayout lr
+        }
+
+        container SignQuiz {
+            include *
+            autolayout lr
+        }
+         component Restfull {
+            include *
+            autolayout
+        }
+        
+        theme default
+    }
+
+}
