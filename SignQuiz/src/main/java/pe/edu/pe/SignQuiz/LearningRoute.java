@@ -1,6 +1,10 @@
 package pe.edu.pe.SignQuiz;
 
 public class LearningRoute {
-    String level;
+    String levels;
+    public LearningRoute(String levels) {
+        this.levels = levels;
+    }
+
     public void newLearningRoute(Specialist specialist){}
 }

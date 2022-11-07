@@ -1,6 +1,7 @@
 package pe.edu.pe.SignQuiz;
 
 public class UploadEvaluation extends UploadMaterial{
+    String title;
     public UploadEvaluation(Specialist specialist, LearningRoute learningRoute) {
         super(specialist, learningRoute);
     }
