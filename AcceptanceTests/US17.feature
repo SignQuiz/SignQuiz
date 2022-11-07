@@ -8,7 +8,7 @@ Feature: Visualizar estadistica del rendimiento aprendiz
     Cuando ingrese a la sección de rendimiento 
     Entonces podré ver las estadísticas relacionadas con las evaluaciones realizadas
     
-    Examples:
+    Examples: Seleccion de seccion rendimiento
     |Menu principal|
     |Inicio|Ruta de aprendizaje|Material educativo|"Estadísticas"|Evaluaciones|Configuracion|
     |Estadisticas|"Rendimiento"|
@@ -23,7 +23,7 @@ Feature: Visualizar estadistica del rendimiento aprendiz
     Cuando ingrese a la sección de rendimiento
     Entonces no podre ver las estadísticas porque no están disponibles
     
-    Examples:
+    Examples:Seleccion de seccion rendimiento cuando no se rindio ninguna evaluacion
     |Menu principal|
     |Inicio|Ruta de aprendizaje|Material educativo|"Estadísticas"|Evaluaciones|Configuracion|
     |Estadisticas|"Rendimiento"|
