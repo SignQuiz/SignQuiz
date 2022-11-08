@@ -4,33 +4,33 @@ Feature: Crear cuenta de tipo aprendiz
 
     Scenario: Creación de cuenta 
 
-    Dado que me encuentro en la sección de crear cuenta de tipo aprendiz 
-    Cuando ingrese mi información requerida
-    Entonces se mostrará en pantalla el mensaje “creación de cuenta exitosa”
+    Given que me encuentro en la sección de crear cuenta de tipo aprendiz 
+    When ingrese mi información requerida
+    Then se mostrará en pantalla el mensaje “creación de cuenta exitosa”
 
-    Examples: Datos de entrada
+    Example: Datos de entrada
         |"Elija su tipo de cuenta"|
         | Aprendiz | Especialista |
         | "Aprendiz" | Especialista |
         |"Ingrese sus datos"|
         | “Username” | “Password” | 
         | JuanÑoqui  | JuanÑoqui123 | 
-    Examples:Datos de salida
+    Example: Datos de salida
         |Mensaje de confirmacion de registro|
         |"Creacion de cuenta exitosa"|
 
    Scenario: Usuario brinda datos incompletos   
 
-   Dado que me encuentro en la sección de car cuenta de tipo aprendiz
-   Cuando ingrese datos incorrectos 
-   Entonces se mostrará en la pantalla el mensaje “Ingresaste datos incorrectos… Intenta de nuevo”
+   Given que me encuentro en la sección de car cuenta de tipo aprendiz
+   When ingrese datos incorrectos 
+   Then se mostrará en la pantalla el mensaje “Ingresaste datos incorrectos… Intenta de nuevo”
 
-    Examples: Datos de entrada
+    Example: Datos de entrada
         |"Elija su tipo de cuenta"|
         | Aprendiz | Especialista |
         |"Ingrese sus datos"|
         | “Username” | “Password” | 
         | "   " |  "   "| 
-    Examples:Datos de salida
+    Example: Datos de salida
         |Mensaje de error de registro|
         |"Ingresaste datos incompletos, Intenta de nuevo"|

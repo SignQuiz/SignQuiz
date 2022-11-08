@@ -4,11 +4,11 @@ Feature: Visualizar estadistica del rendimiento aprendiz
 
     Scenario: Acceder a rendimiento  
 
-    Dado que después de rendir mi evaluación del material educativo y
-    Cuando ingrese a la sección de rendimiento 
-    Entonces podré ver las estadísticas relacionadas con las evaluaciones realizadas
+    Given que después de rendir mi evaluación del material educativo y
+    When ingrese a la sección de rendimiento 
+    Then podré ver las estadísticas relacionadas con las evaluaciones realizadas
     
-    Examples: Seleccion de seccion rendimiento
+    Example: Seleccion de seccion rendimiento
     |Menu principal|
     |Inicio|Ruta de aprendizaje|Material educativo|"Estadísticas"|Evaluaciones|Configuracion|
     |Estadisticas|"Rendimiento"|
@@ -19,11 +19,11 @@ Feature: Visualizar estadistica del rendimiento aprendiz
 
     Scenario: Cuando no rendí evaluación 
 
-    Dado que no rendí la evaluación del material educativo y
-    Cuando ingrese a la sección de rendimiento
-    Entonces no podre ver las estadísticas porque no están disponibles
+    Given que no rendí la evaluación del material educativo y
+    When ingrese a la sección de rendimiento
+    Then no podre ver las estadísticas porque no están disponibles
     
-    Examples:Seleccion de seccion rendimiento cuando no se rindio ninguna evaluacion
+    Example: Seleccion de seccion rendimiento cuando no se rindio ninguna evaluacion
     |Menu principal|
     |Inicio|Ruta de aprendizaje|Material educativo|"Estadísticas"|Evaluaciones|Configuracion|
     |Estadisticas|"Rendimiento"|

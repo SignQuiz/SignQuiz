@@ -4,11 +4,11 @@ Feature: Acceder a evaluaciones
 
    Scenario: Ingreso a la evaluación acerca de la lección de aprendizaje en la que estoy interesado con intentos disponibles
    
-   Dado que me encuentro en la sección de evaluaciones,
-   Cuando seleccione la evaluación de la lección en la que estoy interesado
-   Entonces accederé a la evaluación y se mostrara en pantalla la cantidad de intentos que poseo
+   Given que me encuentro en la sección de evaluaciones,
+   When seleccione la evaluación de la lección en la que estoy interesado
+   Then accederé a la evaluación y se mostrara en pantalla la cantidad de intentos que poseo
 
-   Examples: Seleccion de opcion para acceder a evaluaciones donde se muestra los intentos disponibles
+   Example: Seleccion de opcion para acceder a evaluaciones donde se muestra los intentos disponibles
    |Menu principal|
    |Inicio|Ruta de aprendizaje|Material educativo|Estadísticas|"Evaluaciones"|Configuracion|
    |Evaluaciones|
@@ -16,11 +16,11 @@ Feature: Acceder a evaluaciones
    
    Scenario:Ingreso a la evaluación acerca de la lección de aprendizaje en la que estoy interesado sin intentos disponibles
 
-   Dado que me encuentro en la sección de evaluaciones,
-   Cuando seleccione la evaluación de la lección en la que estoy interesado
-   Entonces se mostrará en pantalla el mensaje: “Intentos disponibles insuficientes, acceda a versión Premium para intentos ilimitados”
+   Given que me encuentro en la sección de evaluaciones,
+   When seleccione la evaluación de la lección en la que estoy interesado
+   Then se mostrará en pantalla el mensaje: “Intentos disponibles insuficientes, acceda a versión Premium para intentos ilimitados”
 
-   Examples: Seleccion de opcion para acceder a evaluaciones donde se muestra los intentos disponibles insuficientes
+   Example: Seleccion de opcion para acceder a evaluaciones donde se muestra los intentos disponibles insuficientes
    |Menu principal|
    |Inicio|Ruta de aprendizaje|Material educativo|Estadísticas|"Evaluaciones"|Configuracion|
    |Evaluaciones|

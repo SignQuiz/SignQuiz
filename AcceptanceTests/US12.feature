@@ -4,11 +4,11 @@ Feature: Crear ruta de aprendizaje
 
     Scenario: Crear ruta de aprendizaje  
 
-    Dado que se encuentre en material de aprendizaje y creo una ruta de aprendizaje  
-    Cuando ya se haya creado la ruta de aprendizaje se mostrará una carpeta en la opción de evaluaciones y material de aprendizaje
-    Entonces se podrá cargar el material de aprendizaje y elaborar las evaluaciones con el tema seleccionado por el especialista 
+    Given que se encuentre en material de aprendizaje y creo una ruta de aprendizaje  
+    When ya se haya creado la ruta de aprendizaje se mostrará una carpeta en la opción de evaluaciones y material de aprendizaje
+    Then se podrá cargar el material de aprendizaje y elaborar las evaluaciones con el tema seleccionado por el especialista 
 
-    Examples: Crear ruta de aprendizaje especialista
+    Example: Crear ruta de aprendizaje especialista
     |Menu principal|
     |Inicio|"Ruta de aprendizaje"|Material educativo|Estadísticas|Evaluaciones|Configuracion|
     |Ruta de aprendizaje|"Crear ruta"|
@@ -16,11 +16,11 @@ Feature: Crear ruta de aprendizaje
 
     Scenario: Especialista no ingreso con cuenta tipo especialista
 
-    Dado que se encuentre en material de aprendizaje
-    Cuando no observa la opción de crear ruta de aprendizaje
-    Entonces se da cuenta que inicio en una cuenta aprendiz y no en una cuenta especialista
+    Given que se encuentre en material de aprendizaje
+    When no observa la opción de crear ruta de aprendizaje
+    Then se da cuenta que inicio en una cuenta aprendiz y no en una cuenta especialista
 
-    Examples: No se puede crear ruta de aprendizaje porque inicio con cuenta aprendiz
+    Example: No se puede crear ruta de aprendizaje porque inicio con cuenta aprendiz
     |Menu principal|
     |Inicio|"Ruta de aprendizaje"|Material educativo|Estadísticas|Evaluaciones|Configuracion|
     |Ruta de aprendizaje|

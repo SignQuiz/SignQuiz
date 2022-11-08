@@ -4,11 +4,11 @@ Feature: Visualizar la monetizacion de evaluaciones y materiales educativos
 
     Scenario: Deseo visualizar cuanto monetice con mis evaluaciones y material de aprendizaje 
 
-    Dado que quiero ver la productividad de realizar evaluaciones y material de aprendizaje 
-    Cuando me dirija a la a sección monetización   
-    Entonces se mostrará en la pantalla un cuadro estadístico de las visualizaciones de los materiales de aprendizaje como también el número de evaluaciones rendidas y el monto que género en su transcurso
+    Given que quiero ver la productividad de realizar evaluaciones y material de aprendizaje 
+    When me dirija a la a sección monetización   
+    Then se mostrará en la pantalla un cuadro estadístico de las visualizaciones de los materiales de aprendizaje como también el número de evaluaciones rendidas y el monto que género en su transcurso
 
-    Examples: Seleccion seccion monetizacion  
+    Example: Seleccion seccion monetizacion  
     |Menu Principal Especialista|
     |Inicio|Ruta de aprendizaje|Evaluaciones|Material de aprendizaje|Estadisticas|"Monetizacion"|Configuracion|
     |Monetizacion|Cobro de comision|
@@ -16,11 +16,11 @@ Feature: Visualizar la monetizacion de evaluaciones y materiales educativos
 
     Scenario: Cuando no subí ninguna evaluación y material de aprendizaje  
 
-    Dado que no subí ninguna evaluación y material de aprendizaje y
-    Cuando ingrese a la sección de monetización
-    Entonces no visualizo que no está disponible la monetización 
+    Given que no subí ninguna evaluación y material de aprendizaje y
+    When ingrese a la sección de monetización
+    Then no visualizo que no está disponible la monetización 
     
-    Examples: Seleccion seccion monetizacion cuando no se subio ninguna evaluacion y/o material de aprendizaje
+    Example: Seleccion seccion monetizacion cuando no se subio ninguna evaluacion y/o material de aprendizaje
     |Menu Principal Especialista|
     |Inicio|Ruta de aprendizaje|Evaluaciones|Material de aprendizaje|Estadisticas|"Monetizacion"|Configuracion|
     |Monetizacion|Cobro de comision|

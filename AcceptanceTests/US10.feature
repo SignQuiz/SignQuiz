@@ -4,11 +4,11 @@ Feature: Visualizar respuestas correctas de las pruebas
 
     Scenario: Elijo la opción correcta en la evaluación seleccionada en base a la lección en la que realice previamente
     
-    Dado que me encuentro en la evaluación en curso.  
-    Cuando presione la opción de la pregunta.
-    Entonces se mostrará en la pantalla el mensaje que la pregunta es correcta
+    Given que me encuentro en la evaluación en curso.  
+    When presione la opción de la pregunta.
+    Then se mostrará en la pantalla el mensaje que la pregunta es correcta
 
-    Examples: Seleccion de respuesta correcta en una evaluacion 
+    Example: Seleccion de respuesta correcta en una evaluacion 
     |Evaluacion sobre el Abecedario de señas|
     |Pregunta x : ¿Cual de estas señas representa la vocal a ?|
     |Seleccione su respuesta|
@@ -18,11 +18,11 @@ Feature: Visualizar respuestas correctas de las pruebas
 
     Scenario: Elijo la opción incorrecta en la evaluación seleccionada en base a la lección en la que realice previamente
 
-    Dado que me encuentro en la evaluación en curso.  
-    Cuando presione la opción incorrecta de la pregunta
-    Entonces se mostrará en pantalla el mensaje de respuesta incorrecta
+    Given que me encuentro en la evaluación en curso.  
+    When presione la opción incorrecta de la pregunta
+    Then se mostrará en pantalla el mensaje de respuesta incorrecta
     
-    Examples: Seleccion de respuesta incorrecta en una evaluacion 
+    Example: Seleccion de respuesta incorrecta en una evaluacion 
     |Evaluacion sobre el Abecedario de señas|
     |Pregunta x : ¿Cual de estas señas representa la vocal a ?|
     |Seleccione su respuesta|

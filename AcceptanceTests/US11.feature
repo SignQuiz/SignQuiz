@@ -4,11 +4,11 @@ Feature: Registrar material de aprendizaje de lenguaje de señas
 
     Scenario: Subir contenido de aprendizaje correctamente
 
-    Dado que me encuentro en la carpeta creada en la ruta de aprendizaje   
-    Cuando seleccione la opción de cargar video y el video con la lección de aprendizaje 
-    Entonces se subirá el material de aprendizaje
+    Given que me encuentro en la carpeta creada en la ruta de aprendizaje   
+    When seleccione la opción de cargar video y el video con la lección de aprendizaje 
+    Then se subirá el material de aprendizaje
 
-    Examples: Subir archivo de video exitosamente
+    Example: Subir archivo de video exitosamente
     |Menu principal|
     |Inicio|Ruta de aprendizaje|"Material educativo"|Estadísticas|Evaluaciones|Configuracion|
     |Material educativo|"Subir Material"|
@@ -22,11 +22,11 @@ Feature: Registrar material de aprendizaje de lenguaje de señas
 
     Scenario: Subir contenido de aprendizaje incorrectamente
 
-    Dado que me encuentro en la carpeta creada en la ruta de aprendizaje   
-    Cuando seleccione la opción de cargar video y seleccione erróneamente el video con la lección de aprendizaje 
-    Entonces no se subirá el material de aprendizaje.
+    Given que me encuentro en la carpeta creada en la ruta de aprendizaje   
+    When seleccione la opción de cargar video y seleccione erróneamente el video con la lección de aprendizaje 
+    Then no se subirá el material de aprendizaje.
     
-    Examples: Subir archivo de video erroneamente
+    Example: Subir archivo de video erroneamente
     |Menu principal|
     |Inicio|Ruta de aprendizaje|"Material educativo"|Estadísticas|Evaluaciones|Configuracion|
     |Material educativo|"Subir Material"|

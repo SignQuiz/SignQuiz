@@ -4,11 +4,11 @@ Feature: Visualizar estadistica del rendimiento de especialista
 
     Scenario: Visualización de estadísticas de las evaluaciones y de material educativo
 
-    Dado que quiero ver la productividad y visualización de mis evaluaciones y material de aprendizaje.
-    Cuando marque la opcion estadísticas de rendimiento 
-    Entonces se mostrará en la pantalla el cuadro estadístico cuantas personas realizaron sus evaluaciones como también cuantas personas visualizaron los materiales de aprendizaje   
+    Given que quiero ver la productividad y visualización de mis evaluaciones y material de aprendizaje.
+    When marque la opcion estadísticas de rendimiento 
+    Then se mostrará en la pantalla el cuadro estadístico cuantas personas realizaron sus evaluaciones como también cuantas personas visualizaron los materiales de aprendizaje   
 
-    Examples: Seleccion seccion estadisticas
+    Example: Seleccion seccion estadisticas
     |Menu Principal Especialista|
     |Inicio|Ruta de aprendizaje|Evaluaciones|Material de aprendizaje|"Estadisticas"|Monetizacion|Configuracion|
     |Estadisticas|"Rendimiento"|
@@ -18,11 +18,11 @@ Feature: Visualizar estadistica del rendimiento de especialista
 
     Scenario: Cuando no subí ninguna evaluación y material de aprendizaje  
 
-    Dado que no subí ninguna evaluación y material de aprendizaje y
-    Cuando ingrese a la sección de rendimiento
-    Entonces no podré ver las estadísticas porque no están disponibles
+    Given que no subí ninguna evaluación y material de aprendizaje y
+    When ingrese a la sección de rendimiento
+    Then no podré ver las estadísticas porque no están disponibles
     
-    Examples:Seleccion seccion estadisticas cuando no se subio ninguna evaluación y material de aprendizaje 
+    Example: Seleccion seccion estadisticas cuando no se subio ninguna evaluación y material de aprendizaje 
     |Menu Principal Especialista|
     |Inicio|Ruta de aprendizaje|Evaluaciones|Material de aprendizaje|"Estadisticas"|Monetizacion|Configuracion|
     |Estadisticas|"Rendimiento"|

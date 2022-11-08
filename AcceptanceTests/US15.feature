@@ -4,11 +4,11 @@ Feature: Visualizar cobro de comision
 
    Scenario: Deseo cobrar por mis evaluaciones y material de aprendizaje 
 
-   Dado que quiero cobrar una comisión por realizar evaluaciones y materiales de aprendizaje 
-   Cuando me dirija a la sección de cobro de comisión.  
-   Entonces podré ingresar los datos de mi tarjeta y se cobrará de acuerdo con lo monetizado
+   Given que quiero cobrar una comisión por realizar evaluaciones y materiales de aprendizaje 
+   When me dirija a la sección de cobro de comisión.  
+   Then podré ingresar los datos de mi tarjeta y se cobrará de acuerdo con lo monetizado
 
-   Examples: Cobro de comision para cobrar lo monetizacion
+   Example: Cobro de comision para cobrar lo monetizacion
    |Menu Principal Especialista|
    |Inicio|Ruta de aprendizaje|Evaluaciones|Material de aprendizaje|Estadisticas|"Monetizacion"|Configuracion|
    |Monetizacion|"Cobro de comision"|
@@ -21,11 +21,11 @@ Feature: Visualizar cobro de comision
 
    Scenario: Cuando no subí ninguna evaluación y material de aprendizaje  
 
-   Dado que no subí ninguna evaluación y material de aprendizaje y
-   Cuando dirija a la sección de cobro de comisión  
-   Entonces no visualizo que no está disponible el cobro de comision
+   Given que no subí ninguna evaluación y material de aprendizaje y
+   When dirija a la sección de cobro de comisión  
+   Then no visualizo que no está disponible el cobro de comision
 
-   Examples: Cobro de comision para cobrar lo monetizacion cuando no se subio nada
+   Example: Cobro de comision para cobrar lo monetizacion cuando no se subio nada
    |Menu Principal Especialista|
    |Inicio|Ruta de aprendizaje|Evaluaciones|Material de aprendizaje|Estadisticas|Monetizacion|Configuracion|
    |Monetizacion|"Cobro de comision"|
