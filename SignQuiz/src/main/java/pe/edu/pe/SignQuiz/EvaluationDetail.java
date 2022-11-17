@@ -1,17 +1,16 @@
 package pe.edu.pe.SignQuiz;
 
 public class EvaluationDetail {
-    String title;
+
     int correctAnswer;
     int wrongAnswers;
-    int amountMade;
+    String options;
     Specialist specialist;
 
-    public EvaluationDetail(String title,int correctAnswer, int wrongAnswers, int amountMade, Specialist specialist) {
-        this.title = title;
+    public EvaluationDetail(int correctAnswer, int wrongAnswers,String options, Specialist specialist) {
         this.correctAnswer = correctAnswer;
         this.wrongAnswers = wrongAnswers;
-        this.amountMade = amountMade;
+        this.options = options;
         this.specialist = specialist;
     }
 

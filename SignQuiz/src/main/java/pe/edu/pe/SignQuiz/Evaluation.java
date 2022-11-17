@@ -4,15 +4,16 @@ import java.util.List;
 
 public class Evaluation {
     Apprentice apprentice;
-    LearningRoute learningRoute;
     int amountEvaluations;
-    public List<EvaluationDetail> evaluations;
-
-    public Evaluation(Apprentice apprentice,LearningRoute learningRoute, int amountEvaluations, List<EvaluationDetail> evaluations) {
-        this.apprentice=apprentice;
-        this.learningRoute = learningRoute;
+    String title;
+    int amountMade;
+    EvaluationDetail evaluation;
+    public Evaluation(Apprentice apprentice, int amountEvaluations, String title, int amountMade, EvaluationDetail evaluation) {
+        this.apprentice = apprentice;
         this.amountEvaluations = amountEvaluations;
-        this.evaluations = evaluations;
+        this.title = title;
+        this.amountMade = amountMade;
+        this.evaluation = evaluation;
     }
     public void selectEvaluation(){}
 }
