@@ -6,6 +6,7 @@ public class SettingsApprentice {
     public SettingsApprentice(Apprentice apprentice) {
         this.apprentice = apprentice;
     }
-    public void editData(){}
-    public void upgrade(){}
+    public void upgrade(Apprentice apprentice) {}
+    public void editData(Apprentice apprentice){}
+    public void closeSession(){}
 }

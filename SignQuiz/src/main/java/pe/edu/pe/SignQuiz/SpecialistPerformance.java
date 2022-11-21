@@ -2,11 +2,11 @@ package pe.edu.pe.SignQuiz;
 
 public class SpecialistPerformance {
     Evaluation evaluations;
-    EducationalMaterial lessons;
+    Lesson lesson;
     Specialist specialist;
-    public SpecialistPerformance(Evaluation evaluations, EducationalMaterial lessons,Specialist specialist) {
+    public SpecialistPerformance(Lesson lesson,Evaluation evaluations,Specialist specialist) {
+        this.lesson = lesson;
         this.evaluations = evaluations;
-        this.lessons = lessons;
         this.specialist=specialist;
     }
     public void showCharts(){}
