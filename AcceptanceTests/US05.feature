@@ -11,7 +11,7 @@ Feature: Acceder a contenido premium
     Example: Datos de entrada
     |Actualizacion de cuenta a premium| 
     |Ingrese su tarjeta de credito o debito|
-    |"68468321341"|
+    |"78468458932"|
     |Realizar pago|
     |"Si"|No|
     Example: Datos de salida
@@ -28,7 +28,7 @@ Feature: Acceder a contenido premium
     Example: Datos de entrada
     |Actualizacion de cuenta a premium| 
     |Ingrese su tarjeta de credito o debito|
-    |"444444844858555555"|
+    |"333333844858555555"|
     |Realizar pago|
     |"Si"|No|
     Example: Datos de salida
