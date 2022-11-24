@@ -1,11 +1,17 @@
 package pe.edu.pe.SignQuiz;
 
+import java.util.Date;
+
 public class UploadEvaluation extends UploadMaterial{
 
-    public UploadEvaluation(String title, Specialist specialist, LearningRoute learningRoute) {
-        super(title, specialist, learningRoute);
-    }
+    Date uploadEvaluationDate;
+    int evaluationId;
 
+    public UploadEvaluation(String title, Specialist specialist, LearningRoute learningRoute, Date uploadEvaluationDate, int evaluationId) {
+        super(title, specialist, learningRoute);
+        this.uploadEvaluationDate = uploadEvaluationDate;
+        this.evaluationId = evaluationId;
+    }
 
     @Override
     public void selectFile(){}
